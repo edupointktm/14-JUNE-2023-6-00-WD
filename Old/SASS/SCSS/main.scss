@@ -1,0 +1,26 @@
+$red-color:red;
+$blue-color:blue;
+$gray-color:gray;
+
+
+h1{
+    color:$red-color;
+}
+
+.container{
+    background-color: gray;
+}
+
+.box1{
+    background-color: blue;
+    @extend .box-height-width
+}
+.box2{
+    background-color: $red-color;
+    @extend .box-height-width
+}
+
+.box-height-width{
+    width: 100px;
+    height: 100px;
+}

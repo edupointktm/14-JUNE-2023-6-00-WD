@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .showhide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()"> Red</button>
+    <button onclick="document.querySelector('#text').style.backgroundColor='Yellow'"> Bg yellow</button>
+    <button onclick="document.querySelector('#text').classList.add('showhide')">Hide</button>
+    <button onclick="document.querySelector('#text').classList.remove('showhide')">Show</button>
+    <button onclick="document.querySelector('#text').classList.toggle('showhide')"> Show/Hide</button>
+       
+
+    <h1 id="text" class="head"> Broadway Inosys</h1>
+    <h1 id="text1" class="head"> Prabhat</h1>
+
+
+    <script>
+        function changeColor(){
+             document.querySelector('.head').style.color="red"
+
+        }
+    </script>
+</body>
+</html>

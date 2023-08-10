@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+}
+
+.container {
+  background-color: gray;
+}
+
+.box1 {
+  background-color: blue;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box-height-width, .box1, .box2 {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=main.css.map */

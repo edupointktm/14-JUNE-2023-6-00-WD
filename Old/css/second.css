@@ -1,0 +1,26 @@
+.first{
+    color:red;
+    
+     height: 200px;
+     width: 250px;
+    border: 10px solid pink;
+     border-bottom: green 10px solid ;
+     border-top: rgb(128, 49, 0) 10px solid ;
+     border-left: rgb(36, 0, 128) 10px solid ;
+     border-right: rgb(126, 0, 128) 10px solid ;
+}
+.second{
+    background-color: blue;
+    height: 250px;
+    width: 50%;
+}
+
+top:5px
+top : solid
+top: blue
+
+left:5px
+left : solid
+left: red
+
+banki: 20px dotted purple

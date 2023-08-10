@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            background-color: gray;
+            display: grid;
+
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: auto auto;
+
+           grid-template-areas: "header header header"
+                                 "sidebar content-1 content-1 "
+                                 "sidebar content-2 content-3 "
+                                 "footer footer footer";
+           gap:10px;
+
+          
+        }
+        .box{
+            /* width: 200px;*/
+            /* height: 150px;  */
+        }
+        .box1{
+            background-color: rgb(0, 42, 255);
+            grid-area: header;
+        }
+        .box2{
+            background-color: rgb(0, 251, 255);
+            grid-area: sidebar;
+        }
+        .box3{
+            background-color: rgb(0, 255, 0);
+           grid-area:content-1;
+        }
+        .box4{
+            background-color: rgb(229, 255, 0);
+            grid-area:content-2;
+        }
+        .box5{
+            background-color: rgb(255, 0, 217);
+            grid-area:content-3;
+        }
+        .box6{
+            background-color: rgb(255, 0, 217);
+            grid-area:footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 box">Header</div>
+        <div class="box2 box">Sidebar</div>
+        <div class="box3 box">Content-1</div>
+        <div class="box4 box">Content-2</div>
+        <div class="box5 box">Content-3</div>
+        <div class="box6 box">Footer</div>
+        
+    </div>
+</body>
+</html>

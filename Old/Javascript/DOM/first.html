@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1> Brodway</h1>
+        <p>  Lorem ipsum dolor sit amet.</p>
+        <div id="content"> <p> Sneha</p></div>
+    </div>
+    <div id="box" class="box">
+        <h1>Prabhat</h1>
+        <p> Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h1 id="test"> Sandesh</h1>
+    <p> Preeti </p>
+    <button onclick="document.querySelector('#test').style='display:none'"> Hide</button>
+    <button onclick="document.querySelector('#test').style='display:block'">Show</button>
+    <button onclick="changeColor()"> All Change</button>
+    <script>
+        var a = document.querySelectorAll('h1')[2].style="color:green"
+        console.log(a)
+
+
+        function changeColor(){
+            document.querySelector('#test').style.backgroundColor=yellow;
+            document.querySelector('#test').style="color:red";
+            // document.querySelector('#test').style="fontSize:35px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .getit {
+      background-color: lightgray;
+      height: auto;
+      margin-left: 50px;
+      margin-right: 50px;
+      display: flex;
+      border-radius: 0px 0px 20px 20px;
+      align-items: center;
+      flex-wrap: wrap;
+
+      ul {
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5;
+        padding-left: 30px;
+        width: 100%;
+
+        li {
+          float: left;
+          list-style: none;
+
+          a {
+            margin-left: 40px;
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            text-transform: capitalize;
+
+
+          }
+
+        }
+      }
+
+      .right {
+        float: right;
+
+      }
+    }
+
+    @media (width<768px) {
+      .getit {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+        font-size: 14px;
+        border-radius: 0px 0px 20px 20px;
+
+        ul {
+          width: 100%;
+          display: grid;
+          justify-content: center;
+
+          li {
+            padding: 0px;
+            text-align: center;
+
+            a {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar {
+      margin-left: 60px;
+      margin-right: 60px;
+      position: sticky;
+
+      .container-fluid {
+
+        header {
+          .similar {
+            ul {
+              margin-right: 100px;
+
+              li {
+                margin-left: 20px;
+                line-height: 2;
+
+                .btn {
+                  background-color: green;
+                  color: white;
+                  text-transform: uppercase;
+                }
+
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .buttonns {
+      margin-right: 30px;
+      margin-left: 30px;
+      width: auto;
+
+      .roww {
+        width: auto;
+
+        .listbutton {}
+
+        .imageholder {
+
+          img {}
+        }
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100px;
+        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .one {
+          background-color: gray;
+          color: white;
+          border: 1px solid yellow;
+          height: 100%;
+        }
+      }
+
+    }
+
+    @media (max-width:500px) {
+      .listbutton {
+        height: 350px;
+        display: grid;
+        overflow: scroll;
+
+        .list-group {
+          .list-group-item {
+            height: 50px;
+          }
+        }
+      }
+
+      .imageholder {
+        margin-top: 20px;
+
+      }
+
+      .main {
+        display: flex;
+        margin-top: 5px;
+        border: none;
+        height: auto;
+        width: 100%;
+
+        border: 1px solid black;
+        overflow: hidden;
+
+        .one {
+          animation: slider 12s linear infinite;
+          border: 1px solid red;
+          margin-right: 0px;
+          width: 100%;
+
+
+        }
+      }
+
+    }
+
+    @keyframes slider {
+      0% {
+        transform: translate(0px);
+      }
+
+      25% {
+        transform: translateX(0px);
+      }
+
+      30% {
+        transform: translateX(-100%);
+
+      }
+
+      50% {
+        transform: translateX(-100%);
+
+      }
+
+      55% {
+        transform: translateX(-200%);
+
+      }
+
+      75% {
+        transform: translateX(-200%);
+
+      }
+
+      80% {
+        transform: translateX(-300%);
+
+      }
+
+      95% {
+        transform: translateX(-300%);
+
+      }
+
+      100% {
+        transform: translateX(-300%);
+
+      }
+
+    }
+
+    .section {
+      margin: 20px 20px 20px 20px;
+
+      .owl-theme {
+        .item {
+          margin-right: 10px;
+
+          img {
+            border: 1px solid lightgray;
+            height: 150px;
+          }
+        }
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="getit">
+    <ul>
+      <li><a href="#" id="">about us</a></li>
+      <li><a href="#" id="">my account</a></li>
+      <li><a href="#" id="">wishlist</a></li>
+      <li><a href="#" id="">checkout</a></li>
+      <li class="right"><a href="#" id=""><i class="fa-solid fa-phone-flip" style="color: #cc0f51;"></i> Need help? Call
+          us: <span style="font-weight: bold;"> 917-991-9010</span></a></li>
+
+
+    </ul>
+
+  </div>
+
+
+  <nav class=" navbar navbar-expand-lg bg-body-light">
+    <div class=" container-fluid">
+      <a class="navbar-brand" href="#"><img
+          src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/themes/woocommerce-shopping-cart-pro/assets/images/logo.png"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <header>
+        <div class="similar collapse navbar-collapse marrgin  " id="navbarSupportedContent">
+          <ul class="navbar-nav d-inline-flex ">
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                page
+              </a>
+              <ul class="dropdown-menu collapse">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active text-uppercase" aria-current="page" href="#">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><button class="btn">buy now</button></a>
+            </li>
+
+          </ul>
+      </header>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center buttonns">
+    <div class="row align-items-start roww">
+      <div class="col-lg-3 listbutton">
+        <ul class="list-group" data-aos="fade-right">
+          <li class="list-group-item text-white bg-dark" aria-current="true">An active item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+      </div>
+      <div class="col-lg-9 imageholder">
+        <img class="img-fluid w-100"
+          src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/themes/woocommerce-shopping-cart-pro/assets/images/slide/slide3.png"
+          alt="">
+        <div class="main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="one">one</div>
+
+              </div>
+              <div class="col-lg-3">
+                <div class="one">two</div>
+
+              </div>
+              <div class="col-lg-3">
+                <div class="one">three</div>
+
+              </div>
+              <div class="col-lg-3">
+                <div class="one">four</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <section class="section">
+        <div class="container-fluid owl-carousel owl-theme">
+          <div class="item"><img
+              src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/uploads/sites/51/2023/01/category-img6.png"
+              class="border" alt="">
+            <p class="text-center text-uppercase">apparel</p>
+          </div>
+          <div class="item"><img
+              src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/uploads/sites/51/2023/01/category-img5.png"
+              class="border" alt="">
+            <p class="text-center text-uppercase">hill</p>
+          </div>
+          <div class="item"><img
+              src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/uploads/sites/51/2023/01/category-img8.png"
+              alt="">
+            <p class="text-center text-uppercase">decoration</p>
+          </div>
+          <div class="item"><img
+              src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/uploads/sites/51/2023/01/category-img10.png"
+              alt="">
+            <p

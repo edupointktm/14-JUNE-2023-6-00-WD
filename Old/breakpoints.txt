@@ -1,0 +1,6 @@
+X-small		0px - 575px 	[col-*]
+small		576 - 767px 	[col-sm-*]
+Medium		768px - 991px	[col-md-*]
+Large		992px - 1199px 	[col-lg-*]
+Extra Large 	1200px - 1399px	[col-xl-*]
+Extra extra Large	1400px - infinite	[col-xxl-*]

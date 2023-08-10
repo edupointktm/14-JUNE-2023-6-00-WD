@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    background-color: $green-color;
+    justify-content: space-between;
+    
+    .logo{
+        margin-left:150px;
+        @include text-format($white-color, 15px, $fs-25,bold);
+
+        snap{
+            color:rgb(221, 249, 4)
+        }
+    }
+    .social-media{
+        // padding: 10px 0;
+        // font-size: $fs-25;
+        // color:$white-color;
+        @include text-format($white-color, 15px, $fs-25);
+        margin-right: 150px;
+    }
+}

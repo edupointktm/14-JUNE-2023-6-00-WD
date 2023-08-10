@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving car</title>
+</head>
+<style>
+    body{ 
+        margin: 0;
+        padding: 0;
+     }
+    .box{
+         background: rgb(0, 254, 144);
+         width: 100px; 
+        height: 100px;
+        animation-name: box;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes box{
+        0%{top: 0; left: 0;}
+        25%{top: 0; left: 200px;}
+        50%{top: 200px; left: 200px;}
+        75%{top: 200px; left: 0;}
+        100%{top: 0; left: 0;}
+
+    }
+    
+</style>
+<body>
+    <div class="box">
+    <img src="./carr.jpg" >    
+</div>
+    
+</body>
+</html>

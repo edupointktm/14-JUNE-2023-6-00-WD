@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .showHide{
+            display: none;
+        }
+        .box{
+            cursor: pointer;
+        }
+        .box1, .box2, .box3{
+            width: 15px;
+            border: 1px solid black;
+            margin: 3px;
+        }
+
+        .bar .box2{
+            opacity: 0;
+        }
+
+        .bar .box1{
+            transform: translate(2px, 3px) rotate(45deg);
+        }
+        .bar .box3{
+            transform: translate(2px, -6px) rotate(-45deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box" onclick="document.querySelector('.box').classList.toggle('bar')">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+<br><br>
+    <button id="btn" value ="hide" onclick="getSetvalue()">Hide</button>
+    <input type="color" id="colorpic" onchange="changeColor()"> <br> <br>
+    
+    <button id="onoff" onclick="onOff()">ON</button> <br>
+    <img src="https://prabhatmallik.com.np/dom/image/OFF.jpg" alt="" width="20%">
+    <h1> Broadway Infosys</h1>
+<br><br>
+
+    
+    <script>
+        function getSetvalue(){
+            var getValue = document.querySelector('#btn').innerHTML
+            
+            if(getValue=="Hide"){
+                document.querySelector('#btn').innerHTML="Show"
+                
+            }
+            else{
+                document.querySelector('#btn').innerHTML="Hide"
+            }
+
+            document.querySelector('h1').classList.toggle('showHide')
+
+            
+            
+        }
+
+        const changeColor = ()=>{
+            var getColor = document.querySelector('#colorpic').value
+            document.querySelector('h1').style.color=getColor;
+        }
+
+        const onOff=()=>{
+            var getvalue = document.querySelector('#onoff').innerHTML;
+            if(getvalue=="ON"){
+                document.querySelector('img').src="https://prabhatmallik.com.np/dom/image/ON.jpg"
+            }
+            console.log(getvalue)
+        }
+    </script>
+
+
+</body>
+</html>

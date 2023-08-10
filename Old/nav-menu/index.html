@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nav Menu</title>
+    <style>
+        .nav{
+            height: 30px;
+        }
+       ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+       
+        
+       }
+       .nav ul li{
+        float:left;
+        width: 170px;
+        line-height: 30px;
+        border: 1px solid red;
+       
+       }
+       .nav ul ul {
+        display: none;
+       }
+        .nav ul li:hover  > ul{
+                display: block;
+        }
+       .nav ul ul li{
+        position: relative;
+       }
+       .nav ul ul ul{
+        position: absolute;
+        top:0%;
+        left:100%;
+       }
+  
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="navBar">
+            <li> <i class="fa-sharp fa-solid fa-house"></i>  HOME</li>
+            <li> <i class="fa-solid fa-address-card"></i> ABOUT
+                <ul>
+                    <li>about me</li>
+                    <li>about Other</li>
+                </ul>
+            </li>
+            <li> <i class="fa-brands fa-usps"></i>SERVICES
+                <ul>
+                    <li>Graphics Design</li>
+                    <li>Web Design</li>
+                    <li>Marketing</li>                    
+                    <li>Branding
+                        <ul class="brandingOpt">
+                            <li>Corporate Branding</li>
+                            <li>Personal Branding</li>
+                            <li>Place Branding</li>
+                            <li>Diital Branding
+                                <!-- <ul>
+                                    <li>Laptop</li>
+                                    <li>Mobile</li>
+                                    <li>Tablet</li>
+                                    <li>Smart TV</li>
+                                    <li>Smart Watch</li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>PORTFOLIO</li>
+            <li>CONTACT</li>
+    </div>
+    
+</body>
+</html>

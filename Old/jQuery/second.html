@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <label for=""> Width </label><input type="text" name="width" class="w"> 
+    <label for=""> Height </label><input type="text" name="height" class="h">
+    <button id="apply">Apply</button>  <br><br>
+    <div class="box">
+
+    </div>
+    
+
+    <script>
+        $(document).ready(function(){
+            $('.box').mouseover(function(){
+                $(this).css("background-color","blue")
+            })
+
+            $('.box').mouseleave(function(){
+                $(this).css("background-color","yellow")
+            })
+            $('.box').click(function(){
+                $(this).css("background-color","purple")
+            })
+
+
+            $('#apply').click(function(){
+                var get_width = parseInt($('.w').val())
+                var get_height = parseInt($('.h').val())
+                $('.box').animate({'width': get_width+"px", "height":get_height+"px"},3000)
+                $('.w').val(get_width+get_height)
+                console.log(get_width)
+            })
+        })
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+nav{
+    background-color: $light-gray;
+ul{
+    margin: auto;
+    width: 900px;
+    // background-color: $black-color;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    li{
+        padding: 15px;
+
+        
+
+        a{
+            
+            text-decoration: none;
+            // color:$black-color;
+            // font-size: $fs-15;
+            // font-weight: bold;
+            @include text-format();
+
+            &:hover{
+                color: red;
+                font-size: 16px;
+            }
+        }
+    }
+}
+}

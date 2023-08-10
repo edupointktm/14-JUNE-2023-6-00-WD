@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Broadway</h1>
+    <div class="test"><h2>Ram</h2></div>
+
+    <script>               
+        var dom;
+        dom=document.title="hi";
+        console.log(dom);
+        dom=document.getElementsByTagName('h1')[0].innerText;
+        console.log("tag ",dom)
+        dom=document.getElementsByClassName('test')[0].innerHTML;
+        console.log("class ",dom);
+
+        dom=document.querySelector('.test').style.color ='red';
+        console.log("class ",dom);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.container{
+    width: 350px;
+    height: 350px;
+    // background-color: black;
+    margin: 100px;
+    box-shadow: 1px 1px 5px gray;
+
+
+    .box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+      
+
+        overflow: hidden;
+        
+
+            
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+
+            animation-name: slide-image;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+
+            @keyframes slide-image {
+                0%{transform: translateX(0);}
+                20%{transform: translateX(0);}
+                25%{transform: translateX(-350px);}
+                35%{transform: translateX(-350px);}
+                40%{transform: translateX(-700px);}
+                55%{transform: translateX(-700px);}
+                60%{transform: translateX(-1050px);}
+                75%{transform: translateX(-1050px);}
+                80%{transform: translateX(-1400px);}
+                95%{transform: translateX(-1400px);}
+                100%{transform: translateX(-1750px);}
+        }
+    }
+
+    
+
+
+    
+}
+
+h1{
+    color:red;
+}

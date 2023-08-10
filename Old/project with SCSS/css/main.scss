@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@400;500&family=Oswald:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import '_variable';
+
+@mixin text-format($clr: black, $ps-tb: 5px, $fs: 15px, $fw: none) {
+    color: $clr;
+    padding: $ps-tb;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import '_header';
+
+@import '_nav-bar';
+
+container {
+    display: flex;
+
+    #left {
+        width: 15%;
+        background-color: $gray-color;
+    }
+
+    #middle {
+        width: 65%;
+        background-color: red;
+    }
+    #right{
+        width: 20%;
+        background-color: blue;
+    }
+}

@@ -1,0 +1,10 @@
+
+.container{
+       /* background-color: red; */
+       height: 250px;
+       width: 250px;
+       border: 2px solid blue;
+       padding:15px;
+       margin: 55px 0 0px 25px;
+        
+}

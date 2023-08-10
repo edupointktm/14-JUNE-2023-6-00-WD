@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@400;500&family=Oswald:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: green;
+  justify-content: space-between;
+}
+header .logo {
+  margin-left: 150px;
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+header .logo snap {
+  color: rgb(221, 249, 4);
+}
+header .social-media {
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: none;
+  margin-right: 150px;
+}
+
+nav {
+  background-color: rgb(223, 222, 222);
+}
+nav ul {
+  margin: auto;
+  width: 900px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: none;
+}
+nav ul li a:hover {
+  color: red;
+  font-size: 16px;
+}
+
+container {
+  display: flex;
+}
+container #left {
+  width: 15%;
+  background-color: rgb(223, 222, 222);
+}
+container #middle {
+  width: 65%;
+  background-color: red;
+}
+container #right {
+  width: 20%;
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */

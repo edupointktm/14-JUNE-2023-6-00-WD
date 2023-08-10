@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 250px;
+            background-color: red;
+            position: relative;
+            transform: rotate(45deg);
+
+            
+        }
+        .box:hover{
+            
+            
+            /* background-color: blue; */
+            transition: 2s;
+        }
+        .box::before{
+            content: "";
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            position: absolute;
+            top:-115px;
+            left:0px;
+            border-radius: 50%;
+        }
+        .box::after{
+            content: "";
+            width: 250px;
+            height: 250px;
+            background-color:  red;
+            position: absolute;
+            top:0;
+            left:-115px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            padding: 15px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row"><input type="text" id="result"></div>
+        <div class="row">
+            
+            <button onclick="document.querySelector('#result').value += '7'">7</button>
+            <button onclick="document.querySelector('#result').value += '8'">8</button>
+            <button onclick="document.querySelector('#result').value += '9'">9</button>
+            <button onclick="document.querySelector('#result').value += '/'">/</button>
+        </div>
+        <div class="row">
+            
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+        </div>
+        <div class="row">
+            
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+        </div>
+        <div class="row">
+            
+            <button>C</button>
+            <button>0</button>
+            <button onclick="Calculate()">=</button>
+            <button>+</button>
+        </div>
+    </div>
+</body>
+<script>
+    let Calculate = ()=>{
+        var get_value = document.querySelector('#result').value;
+        document.querySelector("#result").value = eval(get_value)
+    }
+</script>
+</html>

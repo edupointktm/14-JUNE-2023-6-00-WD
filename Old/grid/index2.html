@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --red:rgb(204, 244, 6);
+            --blue:rgb(255, 0, 200);
+        }
+
+        
+        .container{
+
+            /* align-items: ;
+            justify-items:;
+            place-items: ;
+
+            align-content: ;
+            justify-content: ;
+            place-content: ;
+            
+            align-self: ;
+            justify-self: ;
+            place-self: ;
+
+            implicity/ explicity  */
+            height: 650px;
+           background-color: black;
+           color: white;
+           display: grid;
+           grid-template-columns: repeat(4, 100px);
+           grid-template-rows: 100px 100px;
+
+          
+
+           /* justify-content: start;
+           align-content: end; */
+
+           /* place-content: end start; */
+
+           /* align-items: end;
+           justify-items: center; */
+           gap:5px;
+        }
+        .number{
+            width: 40px;
+            height: 40px;
+            background-color:  rgb(56, 55, 55);
+            font-size: 25px;
+            text-align: center;
+            /* border-radius: 50%; */
+            padding: 10px 8px 5px 8px;
+            
+        }
+        .num7{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: var(--red);
+        }
+
+        .num8{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: var(--blue);
+        }
+        .num9{
+            /* align-self: end;
+            justify-self: end; */
+            background-color:var(--red);
+        }
+        .num6{
+            background-color: var(--red);
+        }
+
+        .num1{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: var(--blue)
+        }
+        .num2{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: var(--blue)
+        }
+        .num3{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: var(--blue)
+        }
+        .num4{
+            /* align-self: end;
+            justify-self: end; */
+            background-color: rgb(30, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="number num9">9</div>
+        <div class="number num8">8</div>
+        <div class="number num7">7</div>
+        <div class="number num6">6</div>
+        <div class="number num5">5</div>
+        <div class="number num4">4</div>
+        <div class="number num3">3</div>
+        <div class="number num2">2</div>
+        <div class="number num1">1</div>
+        <div class="number num0">0</div>
+    </div>
+</body>
+</html>
