@@ -7,7 +7,6 @@ import Section from './Component/Section'
 function App() {
   return (
     <div>
-
         <Header/>
         <Nav/>
         <Section/>

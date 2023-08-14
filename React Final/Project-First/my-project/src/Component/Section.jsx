@@ -1,9 +1,10 @@
 import React from 'react'
+import Home from './Page/Home'
 
 function Section() {
   return (
     <>
-    <h1> Section area</h1>
+      <Home/>
     </>
   )
 }
