@@ -1,18 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
         <>
          <div className="nav">
-            <div className="container">
+            <div className="container py-2">
                 <div className="row">
                     <div className="col">
                        
                         <ul>
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'> Categories</a></li>
-                            <li> <a href='#'> About Us</a></li>
-                            <li><a href='#'> Contact Us</a></li>
+                            <li><Link to ='/'>Home</Link></li>
+                            <li><Link to ='/categories'> Categories</Link></li>
+                            <li> <Link to='/aboutus'> About Us</Link></li>
+                            <li><Link to='#'> Contact Us</Link></li>
                         </ul>
                         </div>
                     </div>

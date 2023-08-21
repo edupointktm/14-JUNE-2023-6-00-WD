@@ -1,6 +1,7 @@
 import React from 'react'
 import CatData from '../../CatData'
 import ProData from '../../ProData'
+import { Link } from 'react-router-dom'
 function Home() {
 
 
@@ -32,29 +33,30 @@ function Home() {
             {/* Product List */}
 
             <div className="section">
-                <div className="container-fluid">
+                <div className="container py-5">
                     <h1> Prodcut List</h1>
-                </div>
-                <div className="row">
 
-                    {ProData.map((pro) =>
-                        <div className="col-lg-3">
-                            <div className="card" style={{ width: '18rem' }}>
-                                <img src={pro.image} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{pro.title}</h5>
-                                    <p className="card-text">{pro.description.substring(0,50)}</p>
-                                    <p>Price : Rs {pro.price}</p>
-                                    <a href="#" className="btn btn-primary">Buy</a>
+                    <div className="row">
+
+                        {ProData.map((pro) =>
+                            <div className="col-lg-3">
+                                <div className="card" style={{ width: '18rem' }}>
+                                    <img src={pro.image} className="card-img-top" height="50%" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{pro.title}</h5>
+                                        <p className="card-text">{pro.description.substring(0, 50)}</p>
+                                        <p>Price : Rs {pro.price}</p>
+                                        <a href="#" className="btn btn-primary"><Link to ={`/productdetails/    ${pro.id}`}> Details </Link></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )}
+                        )}
 
 
 
 
 
+                    </div>
                 </div>
             </div>
         </>

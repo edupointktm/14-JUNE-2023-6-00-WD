@@ -7,7 +7,9 @@ import Categori from './Categori'
 import PageNotFound from './PageNotFound'
 import StudentDetails from './StudentDetails'
 
-function Sections() {
+function Sections(props) {
+ 
+ console.log("Data Section = "+props.stdname)
   return (
     <>
         
@@ -15,7 +17,7 @@ function Sections() {
 
            
                 <Routes>
-                    <Route path='/' element={<Home/>}/>
+                    <Route path='/' element={<Home std={props.stdname} a={props.add}/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='/contact' element={<Contact/>}/>
                     <Route path='/category' element={<Categori/>}/>

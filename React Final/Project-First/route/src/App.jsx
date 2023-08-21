@@ -4,11 +4,13 @@ import Sections from "./Sections";
 import Footer from "./Footer";
 
 function App(){
+  const names="Prabhat Kumar Mallik"
+  const address="Janakpur-10"
   return(
     <>
     
     <Header/>
-    <Sections/>
+    <Sections stdname={names} add={address}/>
     <Footer/>
     
     </>
