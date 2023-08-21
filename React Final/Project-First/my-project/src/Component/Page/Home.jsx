@@ -41,7 +41,7 @@ function Home() {
                         {ProData.map((pro) =>
                             <div className="col-lg-3">
                                 <div className="card" style={{ width: '18rem' }}>
-                                    <img src={pro.image} className="card-img-top" height="50%" alt="..." />
+                                    <Link to = {`/productdetails/    ${pro.id}`}> <img src={pro.image} className="card-img-top" height="50%" alt="..." /></Link>
                                     <div className="card-body">
                                         <h5 className="card-title">{pro.title}</h5>
                                         <p className="card-text">{pro.description.substring(0, 50)}</p>
